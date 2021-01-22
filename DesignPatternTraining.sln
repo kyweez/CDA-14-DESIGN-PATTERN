@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00-Course-Exercises", "00-Course-Exercises", "{0AA6D615-E709-424D-BDBA-EC9BA7C34517}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompositePattern", "CompositePattern", "{71CAF63D-82B1-4FCC-BF86-6713358283C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppCompositePattern", "00-Course-exercises\CompositePattern\ConsoleAppCompositePattern\ConsoleAppCompositePattern.csproj", "{A793B2D9-4B98-4608-B051-ECA1BFD53949}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryCompositePattern", "00-Course-exercises\CompositePattern\ClassLibraryCompositePattern\ClassLibraryCompositePattern.csproj", "{C406618B-9F05-433F-862D-F6410CB5E284}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A793B2D9-4B98-4608-B051-ECA1BFD53949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A793B2D9-4B98-4608-B051-ECA1BFD53949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A793B2D9-4B98-4608-B051-ECA1BFD53949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A793B2D9-4B98-4608-B051-ECA1BFD53949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C406618B-9F05-433F-862D-F6410CB5E284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C406618B-9F05-433F-862D-F6410CB5E284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C406618B-9F05-433F-862D-F6410CB5E284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C406618B-9F05-433F-862D-F6410CB5E284}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{71CAF63D-82B1-4FCC-BF86-6713358283C2} = {0AA6D615-E709-424D-BDBA-EC9BA7C34517}
+		{A793B2D9-4B98-4608-B051-ECA1BFD53949} = {71CAF63D-82B1-4FCC-BF86-6713358283C2}
+		{C406618B-9F05-433F-862D-F6410CB5E284} = {71CAF63D-82B1-4FCC-BF86-6713358283C2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {71BCE6F9-72AB-46DD-B3E4-F9BEEB457705}
+	EndGlobalSection
+EndGlobal
