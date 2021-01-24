@@ -1,15 +1,15 @@
 ﻿namespace ClassLibraryCompositePattern
 {
-    public class Addition : Binary
+    public class Substraction : Binary
     {
-        public Addition(Expression _firstOperand, Expression _secondOperand): base(_firstOperand, _secondOperand)
+        public Substraction(Expression _firstOperand, Expression _secondOperand): base(_firstOperand, _secondOperand)
         {
 
         }
 
         public override int Evaluate()
         {
-            return FirstOperand.Evaluate() + SecondOperand.Evaluate();
+            return FirstOperand.Evaluate() - SecondOperand.Evaluate();
         }
 
         public override string Format()
@@ -19,7 +19,7 @@
 
         public override string ToString()
         {
-            return $"{FirstOperand} + {SecondOperand}";
+            return $"{FirstOperand} - {SecondOperand}";
         }
     }
 }

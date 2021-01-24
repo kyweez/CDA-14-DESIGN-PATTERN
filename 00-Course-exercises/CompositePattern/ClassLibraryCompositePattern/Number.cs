@@ -17,9 +17,14 @@
             return Value;
         }
 
+        public override string Format()
+        {
+            return Value.ToString();
+        }
+
         public override string ToString()
         {
-            return base.ToString();
+            return Value.ToString();
         }
     }
 }

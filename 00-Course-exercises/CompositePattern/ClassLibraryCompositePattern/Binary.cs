@@ -4,12 +4,12 @@
     {
         protected Expression FirstOperand
         {
-            get; set;
+            get; private set;
         }
 
         protected Expression SecondOperand
         {
-            get; set;
+            get; private set;
         }
 
         public Binary(Expression _firstOperand, Expression _secondOperand)
@@ -18,6 +18,7 @@
             SecondOperand = _secondOperand;
         }
 
-        public override abstract int Evaluate();
+        public abstract override int Evaluate();
+        public abstract override string Format();
     }
 }
