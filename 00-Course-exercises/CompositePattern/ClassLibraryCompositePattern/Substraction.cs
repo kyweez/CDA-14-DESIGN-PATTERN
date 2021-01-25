@@ -19,7 +19,7 @@
 
         public override string ToString()
         {
-            return $"{FirstOperand} - {SecondOperand}";
+            return $"({FirstOperand} - {SecondOperand})";
         }
     }
 }

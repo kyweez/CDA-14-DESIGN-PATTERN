@@ -19,6 +19,9 @@ namespace ConsoleAppCompositePattern
             Expression exp4 = new Addition(new Substraction(new Number(13), new Number(3)), new Number(10));
             Console.WriteLine(exp4.Format());
 
+            Expression exp5 = new Substraction(new Substraction(new Number(21), new Number(15)), new Substraction(new Number(12), new Number(51)));
+            Console.WriteLine(exp5.Format());
+
         }
     }
 }

@@ -17,8 +17,5 @@
             FirstOperand = _firstOperand;
             SecondOperand = _secondOperand;
         }
-
-        public abstract override int Evaluate();
-        public abstract override string Format();
     }
 }
