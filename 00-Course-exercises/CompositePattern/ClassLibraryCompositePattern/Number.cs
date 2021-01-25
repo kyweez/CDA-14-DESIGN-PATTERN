@@ -19,7 +19,7 @@
 
         public override string Format()
         {
-            return Value.ToString();
+            return $"{Value} = {Value}";
         }
 
         public override string ToString()
