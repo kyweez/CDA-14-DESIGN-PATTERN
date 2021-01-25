@@ -3,6 +3,10 @@
     public abstract class Expression
     {
         public abstract int Evaluate();
-        public abstract string Format();
+
+        public virtual string Format()
+        {
+            return $"{ToString()} = {Evaluate()}";
+        }
     }
 }

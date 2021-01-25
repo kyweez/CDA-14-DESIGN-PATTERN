@@ -19,12 +19,18 @@
 
         public override string Format()
         {
-            return $"{Value} = {Value}";
+            if (Value > 0)
+                return $"{Value} = {Value}";
+            else
+                return $"{Value} = ({Value})";
         }
 
         public override string ToString()
         {
-            return Value.ToString();
+            if (Value > 0)
+                return Value.ToString();
+            else
+                return $"({Value})";
         }
     }
 }

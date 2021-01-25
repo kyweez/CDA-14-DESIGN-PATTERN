@@ -12,11 +12,6 @@
             return FirstOperand.Evaluate() - SecondOperand.Evaluate();
         }
 
-        public override string Format()
-        {
-            return $"{ToString()} = {Evaluate()}";
-        }
-
         public override string ToString()
         {
             return $"({FirstOperand} - {SecondOperand})";
