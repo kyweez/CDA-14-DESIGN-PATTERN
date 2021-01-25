@@ -22,6 +22,7 @@ namespace ConsoleAppCompositePattern
             Expression exp5 = new Substraction(new Substraction(new Number(21), new Number(15)), new Substraction(new Number(12), new Number(51)));
             Console.WriteLine(exp5.Format());
 
+            Console.WriteLine(new Addition(exp1, new Substraction(new Addition(exp2, exp3), new Substraction(exp4, exp5))).Format());
         }
     }
 }
