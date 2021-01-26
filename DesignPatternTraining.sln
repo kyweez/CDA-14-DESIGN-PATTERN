@@ -11,6 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppCompositePattern"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryCompositePattern", "00-Course-exercises\CompositePattern\ClassLibraryCompositePattern\ClassLibraryCompositePattern.csproj", "{C406618B-9F05-433F-862D-F6410CB5E284}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VisitorPattern", "VisitorPattern", "{B5CC663D-1449-4C4F-9EA1-4D9DF3EF90BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryVisitorPattern", "00-Course-exercises\VisitorPattern\ClassLibraryVisitorPattern\ClassLibraryVisitorPattern.csproj", "{0A9B598F-FC3D-43F7-A6DF-DC618AF9AB7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppVisitorPattern", "00-Course-exercises\VisitorPattern\ConsoleAppVisitorPattern\ConsoleAppVisitorPattern.csproj", "{AA00EA5C-237B-4E03-81DA-DDF5519AECC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppVisitorPattern", "00-Course-exercises\VisitorPattern\WindowsFormsAppVisitorPattern\WindowsFormsAppVisitorPattern.csproj", "{8A669765-5876-4446-8C41-2887CEE4B501}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +33,18 @@ Global
 		{C406618B-9F05-433F-862D-F6410CB5E284}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C406618B-9F05-433F-862D-F6410CB5E284}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C406618B-9F05-433F-862D-F6410CB5E284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A9B598F-FC3D-43F7-A6DF-DC618AF9AB7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A9B598F-FC3D-43F7-A6DF-DC618AF9AB7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A9B598F-FC3D-43F7-A6DF-DC618AF9AB7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A9B598F-FC3D-43F7-A6DF-DC618AF9AB7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA00EA5C-237B-4E03-81DA-DDF5519AECC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA00EA5C-237B-4E03-81DA-DDF5519AECC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA00EA5C-237B-4E03-81DA-DDF5519AECC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA00EA5C-237B-4E03-81DA-DDF5519AECC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A669765-5876-4446-8C41-2887CEE4B501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A669765-5876-4446-8C41-2887CEE4B501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A669765-5876-4446-8C41-2887CEE4B501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A669765-5876-4446-8C41-2887CEE4B501}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -33,6 +53,10 @@ Global
 		{71CAF63D-82B1-4FCC-BF86-6713358283C2} = {0AA6D615-E709-424D-BDBA-EC9BA7C34517}
 		{A793B2D9-4B98-4608-B051-ECA1BFD53949} = {71CAF63D-82B1-4FCC-BF86-6713358283C2}
 		{C406618B-9F05-433F-862D-F6410CB5E284} = {71CAF63D-82B1-4FCC-BF86-6713358283C2}
+		{B5CC663D-1449-4C4F-9EA1-4D9DF3EF90BE} = {0AA6D615-E709-424D-BDBA-EC9BA7C34517}
+		{0A9B598F-FC3D-43F7-A6DF-DC618AF9AB7E} = {B5CC663D-1449-4C4F-9EA1-4D9DF3EF90BE}
+		{AA00EA5C-237B-4E03-81DA-DDF5519AECC8} = {B5CC663D-1449-4C4F-9EA1-4D9DF3EF90BE}
+		{8A669765-5876-4446-8C41-2887CEE4B501} = {B5CC663D-1449-4C4F-9EA1-4D9DF3EF90BE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {71BCE6F9-72AB-46DD-B3E4-F9BEEB457705}

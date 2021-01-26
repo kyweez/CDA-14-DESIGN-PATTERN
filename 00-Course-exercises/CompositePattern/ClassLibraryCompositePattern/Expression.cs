@@ -4,7 +4,7 @@
     {
         public abstract int Evaluate();
 
-        public virtual string Format()
+        public string Format()
         {
             return $"{ToString()} = {Evaluate()}";
         }

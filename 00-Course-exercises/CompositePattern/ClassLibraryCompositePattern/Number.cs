@@ -17,14 +17,6 @@
             return Value;
         }
 
-        public override string Format()
-        {
-            if (Value > 0)
-                return $"{Value} = {Value}";
-            else
-                return $"{Value} = ({Value})";
-        }
-
         public override string ToString()
         {
             if (Value > 0)
