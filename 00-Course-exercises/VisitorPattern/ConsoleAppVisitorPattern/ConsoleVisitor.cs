@@ -11,14 +11,14 @@ namespace ConsoleAppVisitorPattern
     {
         public void Visit(Circle _circle)
         {
-            Console.WriteLine($"{_circle.GetType()}");
+            Console.WriteLine($"Circle");
             Console.WriteLine($"Position : ({_circle.X};{_circle.Y})");
             Console.WriteLine($"Radius   : {_circle.Radius}");
         }
 
         public void Visit(Rectangle _rectangle)
         {
-            Console.WriteLine($"{_rectangle.GetType()}");
+            Console.WriteLine($"Rectangle");
             Console.WriteLine($"Position : ({_rectangle.X};{_rectangle.Y})");
             Console.WriteLine($"Length   : {_rectangle.Length}");
             Console.WriteLine($"Width    : {_rectangle.Width}");
