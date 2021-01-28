@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsAppVisitorPattern
 {
-    partial class Form1
+    partial class FormVisitorPattern
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,32 @@ namespace WindowsFormsAppVisitorPattern
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.panel = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel.Location = new System.Drawing.Point(12, 12);
+            this.panel.Name = "panel";
+            this.panel.Size = new System.Drawing.Size(782, 455);
+            this.panel.TabIndex = 2;
+            this.panel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Paint);
+            // 
+            // FormVisitorPattern
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(806, 481);
+            this.Controls.Add(this.panel);
+            this.Name = "FormVisitorPattern";
+            this.Text = "Visitor pattern";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+        private System.Windows.Forms.Panel panel;
     }
 }
 

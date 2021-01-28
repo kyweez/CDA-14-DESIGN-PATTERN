@@ -38,19 +38,19 @@ namespace ConsoleAppVisitorPattern
             ConsoleVisitor visitor = new ConsoleVisitor();
 
             // Visit 1 : rectangle_1
-            Console.WriteLine("\nVisit 1: Rectangle 1\n====================\n");
+            Console.WriteLine("\nVisit 1: Rectangle 1\n====================");
             rectangle_1.Accept(visitor);
 
             // Visit 2 : rectangle_2
-            Console.WriteLine("\nVisit 2: Rectangle 2\n====================\n");
+            Console.WriteLine("\nVisit 2: Rectangle 2\n====================");
             rectangle_2.Accept(visitor);
 
             // Visit 3 : circle_1
-            Console.WriteLine("\nVisit 3: Circle 1\n=================\n");
+            Console.WriteLine("\nVisit 3: Circle 1\n=================");
             circle_1.Accept(visitor);
 
             // Visit 4 : circle_2
-            Console.WriteLine("\nVisit 4: Circle 2\n=================\n");
+            Console.WriteLine("\nVisit 4: Circle 2\n=================");
             circle_2.Accept(visitor);
 
 
@@ -92,19 +92,19 @@ namespace ConsoleAppVisitorPattern
             Console.WriteLine("ShapeGroup 4 : Position (4,4) shapList_1 in argument");
 
             // Visit 1 : group_1
-            Console.WriteLine("\nVisit 1: Shape Group 1\n======================\n");
+            Console.WriteLine("\nVisit 1: Shape Group 1\n======================");
             group_1.Accept(visitor);
             
             // Visit 2 : group_2
-            Console.WriteLine("\nVisit 2: Shape Group 2\n======================\n");
+            Console.WriteLine("\nVisit 2: Shape Group 2\n======================");
             group_2.Accept(visitor);
             
             // Visit 3 : group_3
-            Console.WriteLine("\nVisit 3: Shape Group 3\n======================\n");
+            Console.WriteLine("\nVisit 3: Shape Group 3\n======================");
             group_3.Accept(visitor);
             
             // Visit 4 : group_4
-            Console.WriteLine("\nVisit 4: Shape Group 4\n======================\n");
+            Console.WriteLine("\nVisit 4: Shape Group 4\n======================");
             group_4.Accept(visitor);
 
             Console.WriteLine("\n=================== EOF ===================");

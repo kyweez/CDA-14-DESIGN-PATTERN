@@ -35,6 +35,7 @@ namespace ClassLibraryVisitorPattern
 
         public override void Accept(IVisitor visitor)
         {
+            visitor.Visit(this);
             foreach (Shape shape in Shapes)
                 shape.Accept(visitor);
         }

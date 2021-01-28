@@ -11,14 +11,14 @@ namespace ConsoleAppVisitorPattern
     {
         public void Visit(Circle _circle)
         {
-            Console.WriteLine($"Circle");
+            Console.WriteLine($"\nCircle");
             Console.WriteLine($"Position : ({_circle.X};{_circle.Y})");
             Console.WriteLine($"Radius   : {_circle.Radius}");
         }
 
         public void Visit(Rectangle _rectangle)
         {
-            Console.WriteLine($"Rectangle");
+            Console.WriteLine($"\nRectangle");
             Console.WriteLine($"Position : ({_rectangle.X};{_rectangle.Y})");
             Console.WriteLine($"Length   : {_rectangle.Length}");
             Console.WriteLine($"Width    : {_rectangle.Width}");
@@ -26,7 +26,8 @@ namespace ConsoleAppVisitorPattern
 
         public void Visit(ShapeGroup _shapeGroup)
         {
-            Console.WriteLine($"Position : ({_shapeGroup.X};{_shapeGroup.Y})");
+            Console.WriteLine($"\nShapeGroup");
+            Console.WriteLine($"ShapeGroup Position : ({_shapeGroup.X};{_shapeGroup.Y})");
         }
     }
 }
