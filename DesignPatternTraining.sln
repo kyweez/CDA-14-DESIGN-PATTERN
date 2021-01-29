@@ -7,9 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00-Course-Exercises", "00-C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompositePattern", "CompositePattern", "{71CAF63D-82B1-4FCC-BF86-6713358283C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppCompositePattern", "00-Course-exercises\CompositePattern\ConsoleAppCompositePattern\ConsoleAppCompositePattern.csproj", "{A793B2D9-4B98-4608-B051-ECA1BFD53949}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppCompositePattern", "00-Course-exercises\CompositePattern\ConsoleAppCompositePattern\ConsoleAppCompositePattern.csproj", "{A793B2D9-4B98-4608-B051-ECA1BFD53949}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryCompositePattern", "00-Course-exercises\CompositePattern\ClassLibraryCompositePattern\ClassLibraryCompositePattern.csproj", "{C406618B-9F05-433F-862D-F6410CB5E284}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibraryCompositePattern", "00-Course-exercises\CompositePattern\ClassLibraryCompositePattern\ClassLibraryCompositePattern.csproj", "{C406618B-9F05-433F-862D-F6410CB5E284}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VisitorPattern", "VisitorPattern", "{B5CC663D-1449-4C4F-9EA1-4D9DF3EF90BE}"
 EndProject
@@ -18,6 +18,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppVisitorPattern", "00-Course-exercises\VisitorPattern\ConsoleAppVisitorPattern\ConsoleAppVisitorPattern.csproj", "{AA00EA5C-237B-4E03-81DA-DDF5519AECC8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppVisitorPattern", "00-Course-exercises\VisitorPattern\WindowsFormsAppVisitorPattern\WindowsFormsAppVisitorPattern.csproj", "{8A669765-5876-4446-8C41-2887CEE4B501}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Powerpoint-Presentation", "01-Powerpoint-Presentation", "{87E9842C-DF87-43B5-8E49-E93D07E8DCDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommandPattern", "CommandPattern", "{EC72B588-4D85-41AE-A914-CA845DA488E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MementoPattern", "MementoPattern", "{365E8077-5E6F-4C25-A4F7-A263F68038A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryCommandPattern", "01-Powerpoint-presentation\CommandPattern\ClassLibraryCommandPattern\ClassLibraryCommandPattern.csproj", "{38B0760C-24ED-405A-8176-D493A5274FA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +53,10 @@ Global
 		{8A669765-5876-4446-8C41-2887CEE4B501}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A669765-5876-4446-8C41-2887CEE4B501}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A669765-5876-4446-8C41-2887CEE4B501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38B0760C-24ED-405A-8176-D493A5274FA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38B0760C-24ED-405A-8176-D493A5274FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38B0760C-24ED-405A-8176-D493A5274FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38B0760C-24ED-405A-8176-D493A5274FA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +69,9 @@ Global
 		{0A9B598F-FC3D-43F7-A6DF-DC618AF9AB7E} = {B5CC663D-1449-4C4F-9EA1-4D9DF3EF90BE}
 		{AA00EA5C-237B-4E03-81DA-DDF5519AECC8} = {B5CC663D-1449-4C4F-9EA1-4D9DF3EF90BE}
 		{8A669765-5876-4446-8C41-2887CEE4B501} = {B5CC663D-1449-4C4F-9EA1-4D9DF3EF90BE}
+		{EC72B588-4D85-41AE-A914-CA845DA488E0} = {87E9842C-DF87-43B5-8E49-E93D07E8DCDF}
+		{365E8077-5E6F-4C25-A4F7-A263F68038A9} = {87E9842C-DF87-43B5-8E49-E93D07E8DCDF}
+		{38B0760C-24ED-405A-8176-D493A5274FA1} = {EC72B588-4D85-41AE-A914-CA845DA488E0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {71BCE6F9-72AB-46DD-B3E4-F9BEEB457705}
