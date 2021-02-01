@@ -44,7 +44,7 @@ namespace ClassLibraryCommandPattern
                 return false;
             else
                 Balance += _amount;
-            Console.WriteLine($"Deposited : {_amount} $\nNew balance : {Balance}");
+            Console.WriteLine($"Deposited : {_amount} $\n{this}");
             return true;
         }
 
@@ -58,9 +58,14 @@ namespace ClassLibraryCommandPattern
             else
             {
                 Balance -= _amount;
-                Console.WriteLine($"Withdrew : {_amount} $\nNew balance : {Balance}");
+                Console.WriteLine($"Withdrew : {_amount} $\n{this}");
                 return true;
             }
+        }
+
+        public override string ToString()
+        {
+            return $"Current {nameof(Balance)} : {Balance} $\n";
         }
     }
 }

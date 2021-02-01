@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ClassLibraryCommandPattern
+﻿namespace ClassLibraryCommandPattern
 {
     public interface ICommand
     {
         void Call();
+        void Undo();
     }
 }
