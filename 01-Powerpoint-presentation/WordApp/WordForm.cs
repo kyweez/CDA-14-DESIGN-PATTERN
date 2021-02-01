@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using ClassLibraryWord;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WordApp
@@ -15,6 +10,25 @@ namespace WordApp
         public WordForm()
         {
             InitializeComponent();
+            toolStripColors.ComboBox.DataSource = Enum.GetNames(typeof(EnumColor));
+            toolStripFont.ComboBox.DataSource = Enum.GetNames(typeof(EnumFont));
+            PopulateColorMenu();
+            PopulateFontMenu();
+            
+            textBoxArea.Font = new Font(EnumFont.Algerian.ToString(), 12.0f);
+
+        }
+
+        private void PopulateColorMenu()
+        {
+            foreach (EnumColor color in Enum.GetValues(typeof(EnumColor)))
+                colorsToolStripMenuItem.DropDownItems.Add($"{color}");
+        }
+
+        private void PopulateFontMenu()
+        {
+            foreach (EnumFont font in Enum.GetValues(typeof(EnumFont)))
+                fontToolStripMenuItem.DropDownItems.Add($"{font}");
         }
     }
 }

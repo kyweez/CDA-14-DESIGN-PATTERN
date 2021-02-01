@@ -36,12 +36,7 @@ namespace WordApp
             this.redoMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.colorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.redToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.greenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.arialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.calibriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.boldToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.toolStripUndo = new System.Windows.Forms.ToolStripButton();
@@ -59,20 +54,22 @@ namespace WordApp
             // 
             // menuStrip
             // 
-            this.menuStrip.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.menuStrip.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip.BackColor = System.Drawing.SystemColors.Control;
+            this.menuStrip.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editMenu});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Margin = new System.Windows.Forms.Padding(0, 4, 0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Padding = new System.Windows.Forms.Padding(16, 4, 0, 4);
-            this.menuStrip.Size = new System.Drawing.Size(605, 35);
+            this.menuStrip.Padding = new System.Windows.Forms.Padding(10, 2, 0, 2);
+            this.menuStrip.Size = new System.Drawing.Size(605, 28);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
             // 
             // editMenu
             // 
+            this.editMenu.BackColor = System.Drawing.SystemColors.ControlLight;
             this.editMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.undoMenu,
             this.redoMenu,
@@ -81,7 +78,7 @@ namespace WordApp
             this.fontToolStripMenuItem,
             this.boldToolStripMenuItem});
             this.editMenu.Name = "editMenu";
-            this.editMenu.Size = new System.Drawing.Size(53, 27);
+            this.editMenu.Size = new System.Drawing.Size(48, 24);
             this.editMenu.Text = "Edit";
             // 
             // undoMenu
@@ -89,7 +86,7 @@ namespace WordApp
             this.undoMenu.Image = ((System.Drawing.Image)(resources.GetObject("undoMenu.Image")));
             this.undoMenu.Name = "undoMenu";
             this.undoMenu.ShowShortcutKeys = false;
-            this.undoMenu.Size = new System.Drawing.Size(224, 28);
+            this.undoMenu.Size = new System.Drawing.Size(184, 26);
             this.undoMenu.Text = "Undo";
             // 
             // redoMenu
@@ -97,87 +94,41 @@ namespace WordApp
             this.redoMenu.Image = ((System.Drawing.Image)(resources.GetObject("redoMenu.Image")));
             this.redoMenu.Name = "redoMenu";
             this.redoMenu.ShowShortcutKeys = false;
-            this.redoMenu.Size = new System.Drawing.Size(224, 28);
+            this.redoMenu.Size = new System.Drawing.Size(112, 26);
             this.redoMenu.Text = "Redo";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(109, 6);
             // 
             // colorsToolStripMenuItem
             // 
-            this.colorsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.redToolStripMenuItem,
-            this.greenToolStripMenuItem,
-            this.blueToolStripMenuItem});
             this.colorsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("colorsToolStripMenuItem.Image")));
             this.colorsToolStripMenuItem.Name = "colorsToolStripMenuItem";
             this.colorsToolStripMenuItem.ShowShortcutKeys = false;
-            this.colorsToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.colorsToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             this.colorsToolStripMenuItem.Text = "Colors";
-            // 
-            // redToolStripMenuItem
-            // 
-            this.redToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.redToolStripMenuItem.Name = "redToolStripMenuItem";
-            this.redToolStripMenuItem.ShowShortcutKeys = false;
-            this.redToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.redToolStripMenuItem.Text = "Red";
-            // 
-            // greenToolStripMenuItem
-            // 
-            this.greenToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.greenToolStripMenuItem.Name = "greenToolStripMenuItem";
-            this.greenToolStripMenuItem.ShowShortcutKeys = false;
-            this.greenToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.greenToolStripMenuItem.Text = "Green";
-            // 
-            // blueToolStripMenuItem
-            // 
-            this.blueToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.blueToolStripMenuItem.Name = "blueToolStripMenuItem";
-            this.blueToolStripMenuItem.ShowShortcutKeys = false;
-            this.blueToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.blueToolStripMenuItem.Text = "Blue";
             // 
             // fontToolStripMenuItem
             // 
-            this.fontToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.arialToolStripMenuItem,
-            this.calibriToolStripMenuItem});
             this.fontToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fontToolStripMenuItem.Image")));
             this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
             this.fontToolStripMenuItem.ShowShortcutKeys = false;
-            this.fontToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.fontToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             this.fontToolStripMenuItem.Text = "Font";
-            // 
-            // arialToolStripMenuItem
-            // 
-            this.arialToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.arialToolStripMenuItem.Name = "arialToolStripMenuItem";
-            this.arialToolStripMenuItem.ShowShortcutKeys = false;
-            this.arialToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.arialToolStripMenuItem.Text = "Arial";
-            // 
-            // calibriToolStripMenuItem
-            // 
-            this.calibriToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.calibriToolStripMenuItem.Name = "calibriToolStripMenuItem";
-            this.calibriToolStripMenuItem.ShowShortcutKeys = false;
-            this.calibriToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.calibriToolStripMenuItem.Text = "Calibri";
             // 
             // boldToolStripMenuItem
             // 
             this.boldToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("boldToolStripMenuItem.Image")));
             this.boldToolStripMenuItem.Name = "boldToolStripMenuItem";
             this.boldToolStripMenuItem.ShowShortcutKeys = false;
-            this.boldToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.boldToolStripMenuItem.Size = new System.Drawing.Size(112, 26);
             this.boldToolStripMenuItem.Text = "Bold";
             // 
             // toolStrip
             // 
+            this.toolStrip.BackColor = System.Drawing.SystemColors.Control;
             this.toolStrip.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.toolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -187,60 +138,69 @@ namespace WordApp
             this.toolStripColors,
             this.toolStripFont,
             this.toolStripBold});
-            this.toolStrip.Location = new System.Drawing.Point(0, 35);
+            this.toolStrip.Location = new System.Drawing.Point(0, 28);
+            this.toolStrip.Margin = new System.Windows.Forms.Padding(0, 4, 0, 0);
             this.toolStrip.Name = "toolStrip";
             this.toolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
-            this.toolStrip.Size = new System.Drawing.Size(605, 35);
+            this.toolStrip.Size = new System.Drawing.Size(605, 27);
             this.toolStrip.TabIndex = 1;
             this.toolStrip.Text = "toolStrip1";
             // 
             // toolStripUndo
             // 
+            this.toolStripUndo.BackColor = System.Drawing.SystemColors.ControlLight;
             this.toolStripUndo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripUndo.Image = ((System.Drawing.Image)(resources.GetObject("toolStripUndo.Image")));
             this.toolStripUndo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripUndo.Name = "toolStripUndo";
-            this.toolStripUndo.Size = new System.Drawing.Size(29, 32);
+            this.toolStripUndo.Size = new System.Drawing.Size(24, 25);
             this.toolStripUndo.Text = "toolStripButton1";
             // 
             // toolStripRedo
             // 
+            this.toolStripRedo.BackColor = System.Drawing.SystemColors.ControlLight;
             this.toolStripRedo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripRedo.Image = ((System.Drawing.Image)(resources.GetObject("toolStripRedo.Image")));
             this.toolStripRedo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripRedo.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.toolStripRedo.Name = "toolStripRedo";
-            this.toolStripRedo.Size = new System.Drawing.Size(29, 32);
-            this.toolStripRedo.Text = "toolStripButton2";
+            this.toolStripRedo.Size = new System.Drawing.Size(24, 27);
+            this.toolStripRedo.Text = "Redo";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 35);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 28);
             // 
             // toolStripColors
             // 
-            this.toolStripColors.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripColors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.toolStripColors.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.toolStripColors.Name = "toolStripColors";
-            this.toolStripColors.Size = new System.Drawing.Size(121, 35);
+            this.toolStripColors.Size = new System.Drawing.Size(121, 28);
             // 
             // toolStripFont
             // 
-            this.toolStripFont.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripFont.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.toolStripFont.Name = "toolStripFont";
-            this.toolStripFont.Size = new System.Drawing.Size(121, 35);
+            this.toolStripFont.Size = new System.Drawing.Size(121, 27);
             // 
             // toolStripBold
             // 
+            this.toolStripBold.BackColor = System.Drawing.SystemColors.ControlLight;
             this.toolStripBold.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripBold.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripBold.Image = ((System.Drawing.Image)(resources.GetObject("toolStripBold.Image")));
             this.toolStripBold.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripBold.Margin = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.toolStripBold.Name = "toolStripBold";
-            this.toolStripBold.Size = new System.Drawing.Size(56, 32);
+            this.toolStripBold.Size = new System.Drawing.Size(49, 27);
             this.toolStripBold.Text = "Bold";
             // 
             // textBoxArea
             // 
-            this.textBoxArea.Location = new System.Drawing.Point(15, 89);
+            this.textBoxArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxArea.Location = new System.Drawing.Point(15, 80);
             this.textBoxArea.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxArea.Multiline = true;
             this.textBoxArea.Name = "textBoxArea";
@@ -249,29 +209,29 @@ namespace WordApp
             // 
             // buttonUndo
             // 
-            this.buttonUndo.Location = new System.Drawing.Point(202, 368);
+            this.buttonUndo.Location = new System.Drawing.Point(410, 353);
             this.buttonUndo.Margin = new System.Windows.Forms.Padding(6);
             this.buttonUndo.Name = "buttonUndo";
-            this.buttonUndo.Size = new System.Drawing.Size(188, 55);
+            this.buttonUndo.Size = new System.Drawing.Size(83, 36);
             this.buttonUndo.TabIndex = 3;
             this.buttonUndo.Text = "Undo";
             this.buttonUndo.UseVisualStyleBackColor = true;
             // 
             // buttonRedo
             // 
-            this.buttonRedo.Location = new System.Drawing.Point(402, 368);
+            this.buttonRedo.Location = new System.Drawing.Point(505, 353);
             this.buttonRedo.Margin = new System.Windows.Forms.Padding(6);
             this.buttonRedo.Name = "buttonRedo";
-            this.buttonRedo.Size = new System.Drawing.Size(188, 55);
+            this.buttonRedo.Size = new System.Drawing.Size(85, 36);
             this.buttonRedo.TabIndex = 4;
             this.buttonRedo.Text = "Redo";
             this.buttonRedo.UseVisualStyleBackColor = true;
             // 
             // WordForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(605, 463);
+            this.ClientSize = new System.Drawing.Size(605, 398);
             this.Controls.Add(this.buttonRedo);
             this.Controls.Add(this.buttonUndo);
             this.Controls.Add(this.textBoxArea);
@@ -311,10 +271,5 @@ namespace WordApp
         private System.Windows.Forms.ToolStripComboBox toolStripFont;
         private System.Windows.Forms.ToolStripButton toolStripBold;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripMenuItem redToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem greenToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem arialToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem calibriToolStripMenuItem;
     }
 }
