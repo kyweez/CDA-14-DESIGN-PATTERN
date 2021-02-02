@@ -94,13 +94,13 @@ namespace WordApp
             this.redoMenu.Image = ((System.Drawing.Image)(resources.GetObject("redoMenu.Image")));
             this.redoMenu.Name = "redoMenu";
             this.redoMenu.ShowShortcutKeys = false;
-            this.redoMenu.Size = new System.Drawing.Size(112, 26);
+            this.redoMenu.Size = new System.Drawing.Size(184, 26);
             this.redoMenu.Text = "Redo";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(109, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(181, 6);
             // 
             // colorsToolStripMenuItem
             // 
@@ -123,8 +123,9 @@ namespace WordApp
             this.boldToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("boldToolStripMenuItem.Image")));
             this.boldToolStripMenuItem.Name = "boldToolStripMenuItem";
             this.boldToolStripMenuItem.ShowShortcutKeys = false;
-            this.boldToolStripMenuItem.Size = new System.Drawing.Size(112, 26);
+            this.boldToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             this.boldToolStripMenuItem.Text = "Bold";
+            this.boldToolStripMenuItem.Click += new System.EventHandler(this.boldEvent);
             // 
             // toolStrip
             // 
@@ -153,7 +154,7 @@ namespace WordApp
             this.toolStripUndo.Image = ((System.Drawing.Image)(resources.GetObject("toolStripUndo.Image")));
             this.toolStripUndo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripUndo.Name = "toolStripUndo";
-            this.toolStripUndo.Size = new System.Drawing.Size(24, 25);
+            this.toolStripUndo.Size = new System.Drawing.Size(24, 24);
             this.toolStripUndo.Text = "toolStripButton1";
             // 
             // toolStripRedo
@@ -170,14 +171,14 @@ namespace WordApp
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 28);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // toolStripColors
             // 
             this.toolStripColors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.toolStripColors.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.toolStripColors.Name = "toolStripColors";
-            this.toolStripColors.Size = new System.Drawing.Size(121, 28);
+            this.toolStripColors.Size = new System.Drawing.Size(121, 27);
             // 
             // toolStripFont
             // 
@@ -196,6 +197,7 @@ namespace WordApp
             this.toolStripBold.Name = "toolStripBold";
             this.toolStripBold.Size = new System.Drawing.Size(49, 27);
             this.toolStripBold.Text = "Bold";
+            this.toolStripBold.Click += new System.EventHandler(this.boldEvent);
             // 
             // textBoxArea
             // 

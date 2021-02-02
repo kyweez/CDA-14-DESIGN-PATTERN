@@ -80,6 +80,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ClassLibraryWordCommand\ClassLibraryWordCommand.csproj">
+      <Project>{19391ca0-6177-446c-a3ac-e2888fa3c2c5}</Project>
+      <Name>ClassLibraryWordCommand</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ClassLibraryWord\ClassLibraryWord.csproj">
       <Project>{cd1dcdd7-93da-4330-aea7-279a7948c450}</Project>
       <Name>ClassLibraryWord</Name>

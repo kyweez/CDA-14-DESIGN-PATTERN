@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ClassLibraryWord;
+using System;
 
 namespace ClassLibraryWordCommand.ConcreteCommands
 {
-    class UndoCommand
+    class UndoCommand : Command
     {
+        public UndoCommand(Text _editor) : base(_editor)
+        {
+        }
+
+        public override void Execute()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

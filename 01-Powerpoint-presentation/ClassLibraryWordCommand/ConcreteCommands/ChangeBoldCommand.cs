@@ -1,16 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ClassLibraryWord;
 
 namespace ClassLibraryWordCommand.ConcreteCommands
 {
     public class ChangeBoldCommand : Command
     {
+        public ChangeBoldCommand(Text _editor):base(_editor)
+        {
+        }
+
         public override void Execute()
         {
-            throw new NotImplementedException();
+            Editor.ChangeBold();
         }
     }
 }

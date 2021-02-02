@@ -55,10 +55,6 @@
       <Project>{cd1dcdd7-93da-4330-aea7-279a7948c450}</Project>
       <Name>ClassLibraryWord</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WordApp\WordApp.csproj">
-      <Project>{88ef788b-e3ac-4a6e-8b6d-d5f82d7c482e}</Project>
-      <Name>WordApp</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

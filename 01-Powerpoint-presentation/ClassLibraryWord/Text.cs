@@ -1,27 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ClassLibraryWord
+﻿namespace ClassLibraryWord
 {
     public class Text
     {
         #region ############### PROPERTIES ###############
-        private EnumFont Font
+        public EnumFont Font
         {
-            get; set;
+            get; private set;
         }
 
-        private EnumColor Color
+        public EnumColor Color
         {
-            get; set;
+            get; private set;
         }
 
-        private bool IsBold
+        public bool IsBold
         {
-            get; set;
+            get; private set;
         }
         #endregion
 
@@ -32,6 +26,31 @@ namespace ClassLibraryWord
             Color = EnumColor.Black;
             IsBold = false;
 
+        }
+        #endregion
+
+        #region ############### EVENT ###############
+        public delegate void DelegateObjectModification(Text _currentText);
+        public event DelegateObjectModification TextHasChanged;
+        #endregion
+
+        #region ############### METHODS ###############
+        public void ChangeBold()
+        {
+            IsBold = (IsBold != true);
+            TextHasChanged(this);
+        }
+
+        public void ChangeFont(EnumFont _newFont)
+        {
+            Font = _newFont;
+            TextHasChanged(this);
+        }
+
+        public void ChangeColor(EnumColor _newColor)
+        {
+            Color = _newColor;
+            TextHasChanged(this);
         }
         #endregion
     }

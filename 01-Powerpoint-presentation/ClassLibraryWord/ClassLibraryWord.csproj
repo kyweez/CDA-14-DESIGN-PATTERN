@@ -43,7 +43,6 @@
   <ItemGroup>
     <Compile Include="EnumColor.cs" />
     <Compile Include="EnumFont.cs" />
-    <Compile Include="ICommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Text.cs" />
   </ItemGroup>

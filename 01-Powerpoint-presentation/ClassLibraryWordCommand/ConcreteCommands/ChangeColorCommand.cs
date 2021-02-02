@@ -1,16 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ClassLibraryWord;
 
 namespace ClassLibraryWordCommand.ConcreteCommands
 {
     class ChangeColorCommand : Command
     {
+        private EnumColor Color
+        {
+            get; set;
+        }
+
+        public ChangeColorCommand(Text _editor, EnumColor _color) : base(_editor)
+        {
+            Color = _color;
+        }
+
         public override void Execute()
         {
-            throw new NotImplementedException();
+            Editor.ChangeColor(Color);
         }
     }
 }

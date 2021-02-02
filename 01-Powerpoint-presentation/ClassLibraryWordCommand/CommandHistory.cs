@@ -1,13 +1,16 @@
-﻿using System;
+﻿using ClassLibraryWord;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ClassLibraryWordCommand
 {
     public class CommandHistory
     {
+        #region ############### PROPERTIES ###############
+        private Text Editor
+        {
+            get; set;
+        }
+
         public int LastOperationIndex
         {
             get; private set;
@@ -22,14 +25,19 @@ namespace ClassLibraryWordCommand
         {
             get; set;
         }
+        #endregion
 
-        public CommandHistory()
+        #region ############### CONSTRUCTOR ###############
+        public CommandHistory(Text _editor)
         {
+            Editor = _editor;
             History = new Dictionary<int, Command>();
             LastOperationIndex = 0;
             CurrentOperationIndex = 0;
         }
+        #endregion
 
+        #region ############### METHODS ###############
         public void Push(Command _command)
         {
             if (LastOperationIndex > CurrentOperationIndex)
@@ -49,5 +57,6 @@ namespace ClassLibraryWordCommand
             while (LastOperationIndex > CurrentOperationIndex)
                 History.Remove(LastOperationIndex--);
         }
+        #endregion
     }
 }
