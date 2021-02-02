@@ -2,7 +2,7 @@
 
 namespace ClassLibraryWordCommand.ConcreteCommands
 {
-    class ChangeColorCommand : Command
+    public class ChangeColorCommand : Command
     {
         private EnumColor Color
         {

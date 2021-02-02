@@ -2,7 +2,7 @@
 
 namespace ClassLibraryWordCommand.ConcreteCommands
 {
-    class ChangeFontCommand : Command
+    public class ChangeFontCommand : Command
     {
         private EnumFont Font
         {
