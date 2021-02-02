@@ -21,9 +21,9 @@ namespace ClassLibraryWordCommand
             get; private set;
         }
 
-        private Dictionary<int, Command> History
+        public Dictionary<int, Command> History
         {
-            get; set;
+            get; private set;
         }
         #endregion
 
@@ -32,18 +32,22 @@ namespace ClassLibraryWordCommand
         {
             Editor = _editor;
             History = new Dictionary<int, Command>();
-            LastOperationIndex = 0;
-            CurrentOperationIndex = 0;
+            LastOperationIndex = -1;
+            CurrentOperationIndex = -1;
         }
         #endregion
 
         #region ############### METHODS ###############
         public void Push(Command _command)
         {
-            if (LastOperationIndex > CurrentOperationIndex)
-                DropSavedCommands();
-            History.Add(CurrentOperationIndex++, _command);
-            LastOperationIndex++;
+            if (_command.IsOriginalCommand)
+            {
+                //_command.
+                if (LastOperationIndex > CurrentOperationIndex)
+                    DropSavedCommands();
+                History.Add(++CurrentOperationIndex, _command);
+                ++LastOperationIndex;
+            }
         }
 
         public void PreviousCommand()

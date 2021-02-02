@@ -19,13 +19,17 @@
         }
         #endregion
 
-        #region ############### CONSTRUCTOR ###############
-        public Text()
+        #region ############### CONSTRUCTORS ###############        
+        public Text(EnumFont _font, EnumColor _color, bool _isBold)
         {
-            Font = EnumFont.Calibri;
-            Color = EnumColor.Black;
-            IsBold = false;
+            Font = _font;
+            Color = _color;
+            IsBold = _isBold;
 
+        }
+
+        public Text() : this(EnumFont.Calibri, EnumColor.Black, false)
+        {
         }
         #endregion
 
@@ -51,6 +55,11 @@
         {
             Color = _newColor;
             TextHasChanged(this);
+        }
+
+        public Text CopyCurrentState()
+        {
+            return new Text(Font, Color, IsBold);
         }
         #endregion
     }

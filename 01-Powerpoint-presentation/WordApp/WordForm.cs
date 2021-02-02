@@ -15,7 +15,7 @@ namespace WordApp
             get; set;
         }
 
-        private CommandHistory History
+        private CommandHistory Commands
         {
             get; set;
         }
@@ -29,7 +29,7 @@ namespace WordApp
             // Properties assignment
             Editor = new Text();
             Editor.TextHasChanged += Editor_TextHasChanged;
-            History = new CommandHistory(Editor);
+            Commands = new CommandHistory(Editor);
 
             // Populate HMI buttons
             toolStripColors.ComboBox.DataSource = Enum.GetNames(typeof(EnumColor));
@@ -46,6 +46,7 @@ namespace WordApp
         {
             ChangeColorCommand ccc;
             ccc = new ChangeColorCommand(Editor, _textColor);
+            Commands.Push(ccc);
             ccc.Execute();
         }
 
@@ -53,9 +54,10 @@ namespace WordApp
         {
             ChangeFontCommand cfc;
             cfc = new ChangeFontCommand(Editor, _textFont);
+            Commands.Push(cfc);
             cfc.Execute();
         }
-        
+
         private void UpdateHMI()
         {
             if (Editor.IsBold)
@@ -89,6 +91,7 @@ namespace WordApp
         private void Bold_Click(object sender, EventArgs e)
         {
             ChangeBoldCommand cbc = new ChangeBoldCommand(Editor);
+            Commands.Push(cbc);
             cbc.Execute();
         }
 
@@ -122,5 +125,12 @@ namespace WordApp
         }
 
         #endregion
+
+        private void buttonUndo_Click(object sender, EventArgs e)
+        {
+            Commands.History[Commands.CurrentOperationIndex].Undo();
+            //Commands.CurrentOperationIndex--;
+
+        }
     }
 }

@@ -220,6 +220,7 @@ namespace WordApp
             this.buttonUndo.TabIndex = 3;
             this.buttonUndo.Text = "Undo";
             this.buttonUndo.UseVisualStyleBackColor = true;
+            this.buttonUndo.Click += new System.EventHandler(this.buttonUndo_Click);
             // 
             // buttonRedo
             // 

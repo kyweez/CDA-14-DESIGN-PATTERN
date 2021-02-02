@@ -46,8 +46,6 @@
     <Compile Include="ConcreteCommands\ChangeBoldCommand.cs" />
     <Compile Include="ConcreteCommands\ChangeColorCommand.cs" />
     <Compile Include="ConcreteCommands\ChangeFontCommand.cs" />
-    <Compile Include="ConcreteCommands\RedoCommand.cs" />
-    <Compile Include="ConcreteCommands\UndoCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
